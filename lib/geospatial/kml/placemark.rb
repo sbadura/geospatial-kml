@@ -40,6 +40,12 @@ module Geospatial
 					node.text.strip
 				end
 			end
+
+			def color
+				if node = @node.css("styleUrl").first
+					"##{node.text.strip.split("-")[1]}"
+				end
+			end
 			
 			def description
 				if node = @node.css("description").first
