@@ -19,6 +19,7 @@
 # THE SOFTWARE.
 
 require "geospatial/kml/version"
+
 require "geospatial/kml/reader"
 require "geospatial/kml/placemark"
 require "geospatial/kml/extended_data"
