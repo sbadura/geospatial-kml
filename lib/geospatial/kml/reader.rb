@@ -31,6 +31,12 @@ module Geospatial
 				
 				return self.new(doc)
 			end
+
+			def self.load_xml(body)
+				doc = Nokogiri::XML(body)
+				
+				return self.new(doc)
+			end
 			
 			def initialize(doc)
 				@doc = doc
